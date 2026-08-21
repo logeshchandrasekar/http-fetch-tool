@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTTP Fetch Toolbar</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>HTTP FETCH TOOLBAR : </h1>
+    <h2>Paste the link & Find out what's actually there.</h2>
+    <p class="sub">Enter any URL. It's fetched straight from your browser and whatever comes back — [ JSON, XML, HTML, plain text ] is rendered as readable text below.</p>
+    <form id="fetchForm">
+      <input type="text" id="urlInput" placeholder="https://api.example.com/data" autocomplete="off" spellcheck="false">
+      <button type="submit" id="submitBtn">Fetch</button>
+    </form>
+    <div class="status-row" id="statusRow"></div>
+    <div class="panel" id="panel">
+      <div class="panel-bar">
+        <span class="label" id="panelLabel">output</span>
+        <button class="copy-btn" id="copyBtn" type="button">Copy</button>
+      </div>
+      <div id="panelBody"></div>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
